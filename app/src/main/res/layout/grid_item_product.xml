@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorPrimary"
+              android:paddingLeft="@dimen/grid_item_horizontal_margin"
+              android:paddingRight="@dimen/grid_item_horizontal_margin"
+              android:paddingTop="@dimen/grid_item_vertical_margin"
+              android:paddingBottom="@dimen/grid_item_vertical_margin">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productThumbnail"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/sample_grid_item"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/grid_thumbnail_description"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/productTitle"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="viewStart"
+        android:paddingLeft="@dimen/grid_item_horizontal_margin"
+        android:paddingRight="@dimen/grid_item_horizontal_margin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/productPrice"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorSeparator"
+        android:paddingLeft="@dimen/grid_item_horizontal_margin"
+        android:paddingRight="@dimen/grid_item_horizontal_margin"/>
+</LinearLayout>

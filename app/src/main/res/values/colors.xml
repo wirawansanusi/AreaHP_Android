@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color> <!-- White -->
+    <color name="colorPrimaryDark">#008eff</color> <!-- Blue -->
+    <color name="textColorDefault">#000000</color>
+    <color name="textColorPrimary">#008eff</color> <!-- Blue -->
+    <color name="textColorError">#ff3333</color> <!-- red -->
+    <color name="colorAccent">#efeff4</color> <!-- Gray -->
+    <color name="colorSeparator">#c8c7cc</color> <!-- Dark Gray -->
+
+    <array name="loadingColor">
+        <item>@color/textColorPrimary</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorSeparator</item>
+    </array>
+
+</resources>

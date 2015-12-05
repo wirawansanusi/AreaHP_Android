@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".ProductListActivity"
+              android:background="@color/colorPrimary"
+              android:orientation="vertical"
+    >
+
+    <include android:id="@+id/toolbar"
+             layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/productView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/title"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/category"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/textColorDefault"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/thumbnail"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/sample_grid_item"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/thumbnail_description"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:shrinkColumns="0" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/weight_label"
+                        android:id="@+id/weightLabel"
+                        android:gravity="right"
+                        android:textColor="@color/textColorDefault"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/weight_value"
+                        android:id="@+id/weight"
+                        android:layout_column="11"
+                        android:textColor="@color/colorSeparator"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:shrinkColumns="0" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/warrantyLabel"
+                        android:gravity="right"
+                        android:textColor="@color/textColorDefault"
+                        android:text="@string/warranty_label"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/warranty_value"
+                        android:id="@+id/warranty"
+                        android:layout_column="11"
+                        android:textColor="@color/colorSeparator"
+                        android:singleLine="false"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:shrinkColumns="0" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/additional_label"
+                        android:id="@+id/additionalLabel"
+                        android:gravity="right"
+                        android:textColor="@color/textColorDefault"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/additional_value"
+                        android:id="@+id/additional"
+                        android:layout_column="11"
+                        android:textColor="@color/colorSeparator"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:shrinkColumns="0" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/price_label"
+                        android:id="@+id/priceLabel"
+                        android:gravity="right"
+                        android:textColor="@color/textColorDefault"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/price_value"
+                        android:id="@+id/price"
+                        android:layout_column="11"
+                        android:textColor="@color/colorSeparator"
+                        />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/favoriteButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="30dp"
+                android:background="@null"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ViewStub
+        android:id="@+id/failureView"
+        android:inflatedId="@id/failureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout="@layout/list_failure" />
+
+    <ViewStub
+        android:id="@+id/loadingView"
+        android:inflatedId="@id/loadingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout="@layout/list_loading" />
+
+    </FrameLayout>
+</LinearLayout>

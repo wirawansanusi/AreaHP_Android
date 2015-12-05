@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Search, should always be in the overflow if-->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <!-- All items below should appear as action button if possible (recommended 48dp) -->
+    <item
+        android:id="@+id/action_category"
+        android:icon="@drawable/tabbar_category"
+        android:title="Categories"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_favorite"
+          android:icon="@drawable/tabbar_star"
+          android:title="Favorite"
+          app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_contact"
+        android:icon="@drawable/tabbar_contact"
+        android:title="Contact"
+        app:showAsAction="never"/>
+
+</menu>

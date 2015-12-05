@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AreaHP</string>
+
+    <string name="tabbar_categories">Categories</string>
+    <string name="tabbar_favorites">Favorites</string>
+    <string name="tabbar_contact">Contact</string>
+    <string name="title_activity_product_list">ProductListActivity</string>
+    <string name="title_activity_product">ProductActivity</string>
+
+    <!-- Product Activity -->
+    <string name="thumbnail_description">thumbnail image</string>
+
+    <string name="weight_label">Berat :</string>
+    <string name="warranty_label">Garansi :</string>
+    <string name="additional_label">Paket Pengiriman :</string>
+    <string name="price_label">Harga :</string>
+
+    <string name="weight_value">-</string>
+    <string name="warranty_value">-</string>
+    <string name="additional_value">-</string>
+    <string name="price_value">-</string>
+
+    <string name="favorite_button_label_add">Tambahkan kedalam favorit</string>
+    <string name="favorite_button_label_remove">Hapus dalam daftar favorit</string>
+    <string name="grid_thumbnail_description">product thumbnail grid description</string>
+    <string name="list_failure_button_text">Retry</string>
+    <string name="layout_empty_title_text">Tidak ada produk di dalam favorit</string>
+</resources>
